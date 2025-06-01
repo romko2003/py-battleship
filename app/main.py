@@ -52,7 +52,8 @@ class Ship:
 
 
 class Battleship:
-    def __init__(self, ships: List[Tuple[Tuple[int, int], Tuple[int, int]]]) -> None:
+    def __init__(self,
+                 ships: List[Tuple[Tuple[int, int], Tuple[int, int]]]) -> None:
         self.field: dict[Tuple[int, int], Ship] = {}
         self.ships: List[Ship] = []
 
